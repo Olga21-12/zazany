@@ -18,31 +18,8 @@
 </head>
 <body>
 
-    <!-- icons 
-search       <i class="fa-solid fa-magnifying-glass"></i>
-facebook     <i class="fa-brands fa-square-facebook"></i>
-instagram    <i class="fa-brands fa-instagram"></i>
-youtube      <i class="fa-brands fa-youtube"></i>
-heart        <i class="fa-solid fa-heart"></i>
-sun          <i class="fa-regular fa-sun"></i>
-children     <i class="fa-solid fa-children"></i>
-envelope     <i class="fa-regular fa-envelope"></i>
-education    <i class="fa-solid fa-graduation-cap"></i>
-water        <i class="fa-solid fa-droplet"></i>
-apple        <i class="fa-solid fa-apple-whole"></i>
-heart+       <i class="fa-solid fa-heart-circle-plus"></i>
-electricite  <i class="fa-solid fa-lightbulb"></i>
-copyright    <i class="fa-regular fa-copyright"></i>
-
-<i class="fa-solid fa-angle-up"></i>
-<i class="fa-solid fa-angle-down"></i>
-<i class="fa-solid fa-angle-right"></i>
-<i class="fa-solid fa-angle-left"></i>
-
-    
-    -->
-
     <header id="top">
+        <div id="page-top"></div>
         <div class="px-big py-2 nav-top">
             <section class="row">
                 <article class="col-12">
@@ -75,7 +52,7 @@ copyright    <i class="fa-regular fa-copyright"></i>
             </section>
         </div>
 
-        <div class="nav-bottom bg-brown py-2">
+        <div id="mainNavbar" class="nav-bottom bg-brown py-2">
 
             <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
                 <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">               
@@ -167,135 +144,214 @@ copyright    <i class="fa-regular fa-copyright"></i>
     </header>
 
     <main>
-
-        <img src="images/patience.png" alt="patience">
-
-        <div class="container">
+        <div class="hero px-0"> <!-- banner -->
+            <section class="row g-0">
+                <article class="col-12">
+                    <div class="page-banner-hero" style="background-image: url('images/articles/564608361_1241794714647681_7446939235174278260_n.jpg');">
+                        <div class="hero-content">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <h1 class="titre-banner text-uppercase text-white">Nos <span class="titre-banner-color">articles</span></h1>
+                                    <p class="text-banner text-white mb-4">Découvrez nos actualités, nos projets sur le terrain et les histoires inspirantes des enfants et des familles que nous soutenons à Madagascar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>       
     
-    <!-- Фильтры категорий -->
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
-      <a href="#" class="zm-filter-pill active">Tous les articles</a>
-      <a href="#" class="zm-filter-pill">Nos projets</a>
-      <a href="#" class="zm-filter-pill">Éducation</a>
-      <a href="#" class="zm-filter-pill">Santé</a>
-      <a href="#" class="zm-filter-pill">Solidarité</a>
-      <a href="#" class="zm-filter-pill">Actualités</a>
-    </div>
+        <div class="px-big py-big"> <!-- filtre -->
+            <section class="row">
+                <article class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                        <a href="#" class="zm-filter-pill active">Tous les articles</a>
+                        <a href="#" class="zm-filter-pill">Nos projets</a>
+                        <a href="#" class="zm-filter-pill">Éducation</a>
+                        <a href="#" class="zm-filter-pill">Santé</a>
+                        <a href="#" class="zm-filter-pill">Solidarité</a>
+                        <a href="#" class="zm-filter-pill">Actualités</a>
+                    </div>
+                </article>
+            </section>            
+        </div>    
 
-    <!-- Сетка статей -->
-    <div class="row g-4 mb-5">
-      
-      <!-- Повторить карточку 6 раз -->
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
+        <div class="px-big py-big">
+            <div class="row g-4 mb-5">
+            
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/NIRINTSOA-ET-SA-MACHINE-A-COUDRE.jpg" class="article-card-img img-top" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Solidarité - 2025</div>
+                        <div class="zm-card-date text-muted mb-1">4 février 2025</div>
+                        <h3 class="zm-card-title">L’histoire de Nirintsoa : Quand le parrainage ouvre les portes...</h3>
+                        <p class="zm-card-text text-muted">Dans les rues animées de Madagascar, où chaque enfant porte en lui des rêves et des espoirs, l’histoire de Nirintsoa résonne comme un témoignage puissant du pouvoir du parrainage.</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/OSCAR.jpg" class="article-card-img" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Solidarité - 2024</div>
+                        <div class="zm-card-date text-muted mb-1">4 décembre 2024</div>
+                        <h3 class="zm-card-title">Journée internationale de la Solidarité Humaine</h3>
+                        <p class="zm-card-text text-muted">Le 20 décembre, le monde entier célèbre la Journée internationale de la Solidarité Humaine, une occasion précieuse pour unir nos cœurs et nos forces afin d’aider les plus vulnérables.</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/banniere_crowdfunding2.jpg" class="article-card-img" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Actualités - 2024</div>
+                        <div class="zm-card-date text-muted mb-1">30 avril 2024</div>
+                        <h3 class="zm-card-title">Les bienfaits d’un parrainage d’un enfant</h3>
+                        <p class="zm-card-text text-muted">Le parrainage d’un enfant pauvre à Madagascar offre une multitude de bienfaits, tant pour l’enfant que pour le parrain ou la marraine. Voici quelques-uns des avantages...</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/christinekitsolaire2.png" class="article-card-img img-top" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Solidarité - 2023</div>
+                        <div class="zm-card-date text-muted mb-1">7 avril 2023</div>
+                        <h3 class="zm-card-title">Et la lumière fût chez Christine</h3>
+                        <p class="zm-card-text text-muted">Une scène de vie banale pour nous, avoir de la lumière chez soi et pour les enfants, faire ses devoirs avec de la lumière.</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/nouveau-college-amboditavolo.jpg" class="article-card-img" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Éducation - 2022</div>
+                        <div class="zm-card-date text-muted mb-1">9 décembre 2022</div>
+                        <h3 class="zm-card-title">Construction du Collège d’Amboditavolo</h3>
+                        <p class="zm-card-text text-muted">Étudier dans de meilleures conditions où le toit ne menace pas de s’effondrer ou que le sol ne soit pas inonder par les pluies devient réalité .</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="zm-card bg-lait rounded-3 shadow-sm h-100">
+                    <img src="images/articles/Distribution-kit-cepe-examen-2022-EPP-ANTANDRO-retouche.-scaled.jpg" class="article-card-img" alt="Projet">
+                    <div class="zm-card-body">
+                        <div class="zm-card-category">Éducation - 2022</div>
+                        <div class="zm-card-date text-muted mb-1">12 juillet 2022</div>
+                        <h3 class="zm-card-title">Distribution des kits scolaires pour l’examen du CEPE 2022</h3>
+                        <p class="zm-card-text text-muted">Comme tous les ans, nos chers zazany qui ne manquent pas de détermination dans leur scolarité ont passé l’examen du CEPE, examen de fin de cycle de primaire afin de pouvoir entrer en classe de 6ème.</p>
+                        <a href="#" class="zm-card-link">Lire la suite →</a>
+                    </div>
+                    </div>
+                </div> 
+            
+                <section class="row mt-3">
+                    <article class="col-12">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center border-0 gap-2">
+                                <li class="page-item"><a class="page-link border-0 color-brown fw-bold" href="#">‹ Précédent</a></li>
+                                <li class="page-item active"><a class="page-link rounded-circle border-0 color-brown fw-bold" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link border-0 color-brown " href="#">2</a></li>
+                                <li class="page-item"><a class="page-link border-0 color-brown " href="#">3</a></li>
+                                <li class="page-item"><span class="page-link border-0 color-brown ">...</span></li>
+                                <li class="page-item"><a class="page-link border-0 color-brown fw-bold" href="#">Suivant ›</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                </section>    
+            </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
+        <div class="px-big py-big ensemble">   <!-- Ensemble, on va plus loin -->
+           
+            <section class="row align-items-center">
+
+                <article class="col-12 col-md-8 mb-4 mb-lg-0 text-start">
+                    <span class="subtitle text-uppercase d-block mb-1">Soutenir le projet</span>
+                    <h2 class="section-title mb-3">Ensemble, on va plus loin</h2>
+                    <p class="section-text m-0">
+                        Votre soutien change concrètement la vie d'un enfant et de sa famille. Vous pouvez vous engager de différentes manières :
+                    </p>
+
+                    <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 flex-wrap mt-5">
+                    
+                        <a href="devenir-benevole.html" class="btn btn-cta text-uppercase d-inline-flex align-items-center justify-content-center">
+                            Devenir bénévole 
+                            <img src="images/heart-mains.svg" alt="devenir-benevole" class="btn-svg-icon ms-1">
+                        </a>
+                        
+                        <a href="enfants-a-parrainer.html" class="btn btn-cta text-uppercase d-inline-flex align-items-center justify-content-center">
+                            Parrainer un enfant                         
+                            <i class="fa-solid fa-children"></i>
+                        </a>
+                        
+                        <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-cta text-decoration-none text-uppercase">
+                            Faire un don solidaire 
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-4 text-center">
+                    <img src="images/colibri/colibri4.png" alt="Colibri" class="img-fluid colibri-img">
+                </article>
+            </section>           
         </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="zm-card">
-          <img src="images/article-thumb.jpg" class="zm-card-img" alt="Partenariat">
-          <div class="zm-card-body">
-            <div class="zm-card-category">Éducation - 2025</div>
-            <div class="zm-card-date">4 février 2025</div>
-            <h3 class="zm-card-title">Partenariat : collège alexandre dumas paris 15è</h3>
-            <p class="zm-card-text">L'objectif du partenariat est de permettre aux collégiens de faire des actions afin de récolter des dons en faveur de Zazany Madagascar.</p>
-            <a href="#" class="zm-card-link">Découvrir le projet →</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Пагинация -->
-    <div class="zm-pagination">
-      <a href="#">&lt; Précédent</a>
-      <a href="#" class="fw-bold">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <span>...</span>
-      <a href="#">Suivant &gt;</a>
-    </div>
-
-  </div>
-
+        
+        <div class="bg-yellow"><!-- Vous avez des questions ? -->
+            <div class="px-big py-5">
+                <section class="row">
+                    <article class="col-12">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 text-center text-md-start">
+                            
+                            <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                <i class="fa-solid fa-hand-holding-heart faq-icon color-brown"></i>
+                                <div class="ms-4">
+                                    <h3 class="fw-bold color-brown mb-1">Vous avez des questions ?</h3>
+                                    <p class="color-brown m-0">
+                                        N'hésitez pas à nous contacter, nous serons ravis de vous répondre.
+                                    </p>
+                                </div>
+                            </div>
+  
+                            <a href="nous-contacter.html" class="btn btn-dark-cta text-uppercase rounded-pill py-2 px-4 flex-shrink-0">
+                                Nous contacter
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div> 
     </main>
 
     <footer class="footer-wrapper">
         <div class="bg-brown py-2">
             <section class="row align-items-center">                
-                <article class="logo col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="logo col-6 col-md-4 text-end text--md-center mb-3 mb-md-0">
                     <a href="index.html" class="d-inline-block">
                         <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
                     </a>
                 </article>
                 
-                <article class="colibri col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="colibri col-6 col-md-4 text-start text-md-center mb-3 mb-md-0">
                     <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
                 </article>
 
-                <article class="socio col-12 col-md-4 text-center text-md-start">
+                <article class="socio col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
-                    <div class="footer-social-icons d-flex align-items-center gap-4">
+                    <div class="footer-social-icons d-flex align-items-center justify-content-center justify-content-md-start gap-4">
                         <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
@@ -318,17 +374,17 @@ copyright    <i class="fa-regular fa-copyright"></i>
                 <article class="col-12">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
                         
-                        <div class="copyright-links mb-2 mb-md-0">
-                            <span>&copy; Association Zazany Madagascar 2026</span>
-                            <span class="mx-1">|</span>
-                            <a href="mentions-legales.html" class="text-secondary text-decoration-none">Mentions Légales</a>
-                            <span class="mx-1">|</span>
-                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none">Politique De Confidentialité</a>
+                        <div class="copyright-links mb-2 mb-md-0 d-flex flex-column flex-md-row text-center mb-2 mb-md-0">
+                            <span class="mb-2 mb-md-0">&copy; Association Zazany Madagascar 2026</span>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="mentions-legales.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Mentions Légales</a>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Politique De Confidentialité</a>
                         </div>
 
                         <div class="donate-mini">
                             <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
-                                <i class="fa-solid fa-heart text-danger me-1"></i>
+                                <i class="fa-solid fa-heart color-red me-1"></i>
                                 Faire Un Don
                             </a>
                         </div>
@@ -339,9 +395,10 @@ copyright    <i class="fa-regular fa-copyright"></i>
         </div>
     </footer>
 
-    <a class="back-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/header-scroll.js"></script>
 </body>
 </html>

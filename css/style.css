@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
 	box-sizing: border-box;
     padding: 0;
@@ -22,10 +23,10 @@ img {
 
 h1, .titre-banner{
     font-family: "Poppins", sans-serif;
-    font-size: 4.5rem;
-    font-weight: 900;
+    font-size: clamp(1.85rem, 5vw, 4.5rem);
+    font-weight: 700;
     color: #ffffff;   
-    line-height: 1.2; 
+    line-height: 1.1; 
 }
 
 .titre-banner-color{
@@ -34,26 +35,26 @@ h1, .titre-banner{
 
 .text-banner{
     color: #ffffff;
-    font-size: 1.85rem;
-    font-weight: 500;
+    font-size: clamp(1.15rem, 2.2vw, 1.85rem);
+    font-weight: 400;
 }
 
 h2{
     font-family: "Poppins", sans-serif;
     color: #24483f;
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: clamp(2.75rem, 4vw, 3.25rem);
+    font-weight: 500;
 }
 
 h3{
     color: #dd9933;
-    font-size: 1.5rem;   
+    font-size: clamp(1.35rem, 1.8vw, 1.5rem);   
 }
 
 h4{
     font-family: "Poppins", sans-serif;
     color: #24483f;
-    font-size: 1.25rem;
+    font-size: clamp(1.15rem, 1.5vw, 1.25rem);
 }
 
 .text-color{
@@ -64,13 +65,13 @@ h4{
 .subtitle{
     font-family: "Poppins", sans-serif;
     color: #dd9933;
-    font-size: 1.15rem;
+    font-size: clamp(1.05rem, 1.3vw, 1.15rem);
     font-weight: 500;
 }
 
 .section-text{
     text-align: justify;
-    font-size: 1.15rem;    
+    font-size: clamp(1rem, 1.2vw, 1.15rem);    
 }
 
 .text-small,
@@ -114,9 +115,14 @@ h4{
 .bg-yellow{background-color: #dd9933;}
 .bg-brown{background-color: #281809;}
 .bg-green{background-color: #24483f;}
+.bg-ohra{background-color: #d86b42;}
 
 .fa-heart {
     color: #a51a02 !important;    
+}
+
+.border-warning{
+    border-color:#dd9933;
 }
 
 /*========== spaces ====================== */
@@ -127,7 +133,8 @@ h4{
 }
 
 .py-big{
-    padding-top: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 /*========== nav top + search ====================== */
@@ -138,9 +145,9 @@ h4{
 
 .search-form .form-control {
     border-color: #281809;
-    padding-right: 38px;
+    padding-right: 35px;
     box-shadow: none;
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     height: 36px;
 }
 
@@ -154,7 +161,7 @@ h4{
     right: 12px;
     transform: translateY(-50%);
     color: #281809;
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     padding: 0;
     cursor: pointer;
     z-index: 5;
@@ -212,6 +219,7 @@ h4{
 .navbar-nav .nav-link:focus {
     color: #dd9933;
     border-bottom: 2px solid #dd9933;
+    text-decoration: none;
 }
 
 .navbar-nav .nav-link.active {
@@ -286,14 +294,14 @@ h4{
 }
 
 .nav-bottom.scrolled .navbar-nav .nav-link:hover{
-    color: #dd9933;     
+    color: #dd9933;   
+      
 }
     
     .nav-bottom.scrolled .navbar-nav .nav-link.active{
       color: #dd9933;
       font-size: 1.15rem;
       font-weight: 400;
-      text-decoration: underline;
 }
 
   .nav-bottom .btn-don {
@@ -311,7 +319,7 @@ h4{
 .hero-carousel,
 .hero-carousel .carousel-inner,
 .hero-carousel .carousel-item {
-    height: 750px;
+    height: 500px;
 }
 
 .hero-carousel .carousel-item {
@@ -320,7 +328,8 @@ h4{
     position: relative;
 }
 
-.hero-carousel .carousel-item::before {
+.hero-carousel .carousel-item::before,
+.page-banner-hero::before {
     content: '';
     position: absolute;
     top: 0; 
@@ -337,8 +346,13 @@ h4{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;    
+    justify-content: flex-end;
+    padding-left: 25px;
+    padding-bottom: 50px;    
+}
+
+.hero-content-center{
+    justify-content: center;    
 }
 
 .carousel-control-next, 
@@ -355,33 +369,28 @@ h4{
 }
 
 .page-banner-hero {
-    height: 750px;
+    height: 500px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.page-banner-hero::before {
-    content: '';
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-    background: linear-gradient(90deg, rgba(40, 24, 9, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-    z-index: 1; 
-}
-
 /*  ===============================  icons =============================================  */
 
+.stat-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
 i.stat-icon {
-    font-size: 2.8rem;
+    font-size: 4rem;
     color: #281809;
 }
 
 .stat-icon {
-    width: 48px;
-    height: 48px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
     flex-shrink: 0; 
     display: inline-flex;
@@ -390,21 +399,21 @@ i.stat-icon {
 }
 
 .stat-icon.icon-padded {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height:100px;
     margin: -7px;
 }
 
 .stat-number {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: #a51a02;
     line-height: 1;
 }
 
 .stat-label {    
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #281809;
     font-weight: 500;
     line-height: 1.2;
@@ -416,17 +425,19 @@ i.stat-icon {
 
 /*  ===============================  boutons =============================================  */
 
-.btn-cta {
-    background-color: #dd9933;
-    color: #281809;
+.btn-cta,
+.btn-banner-cta,
+.btn-dark-cta {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.05rem;
     padding: 12px 30px;
     border-radius: 30px;
-    border: 1px solid #dd9933;
     transition: all 0.2s ease;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-cta:hover {
@@ -436,17 +447,13 @@ i.stat-icon {
     transform: translateY(-2px);
 }
 
-.btn-banner-cta{
+.btn-cta, .btn-banner-cta {
     background-color: #dd9933;
     color: #281809;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    padding: 12px 30px;
-    border-radius: 30px;
     border: 1px solid #dd9933;
-    transition: all 0.2s ease;
-    text-decoration: none;
+}
+
+.btn-banner-cta{
     text-transform: uppercase;
 }
 
@@ -459,15 +466,8 @@ i.stat-icon {
 
 .btn-dark-cta{
     background-color: #281809;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    padding: 12px 30px;
-    border-radius: 30px;
+    color: #ffffff;    
     border: 1px solid #281809;
-    transition: all 0.2s ease;
-    text-decoration: none;
 }
 
 .btn-dark-cta:hover {
@@ -477,7 +477,8 @@ i.stat-icon {
     transform: translateY(-2px);
 }
 
-.btn-cta .btn-svg-icon {
+.btn-cta .btn-svg-icon,
+.btn-dark-cta .btn-png-icon {
     height: 1.1em;
     width: auto;
     object-fit: contain;
@@ -539,7 +540,7 @@ i.stat-icon {
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s;
     animation: scroll-appear linear both;
     animation-timeline: scroll();
-    animation-range: 100vh 100vh;
+    animation-range: 90vh 90vh;
 }
 
 @keyframes scroll-appear {
@@ -570,7 +571,6 @@ i.stat-icon {
     width: 100%;
     max-height: 280px;
     object-fit: cover;
-    border-radius: 16px !important;
 }
 
 /* index - testimonial */
@@ -605,9 +605,12 @@ i.stat-icon {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card-fiscale{
+    width: 200px;
+}
+
 .action-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08) !important;
 }
 
 .action-card-icon {
@@ -616,19 +619,25 @@ i.stat-icon {
 }
 
 .action-card-title {    
-    font-size: 1.05rem;
+    font-size: 1.15rem;
+    font-weight: 600;
 }
 
 .action-card-text {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     line-height: 1.3;
+}
+
+.logos-partenaires{
+    height: 100%;
+    width: auto;
 }
 
 /* --- Nous apprécions --- */
 
 .badge-tag {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;  
+    font-size: 0.9rem;  
     font-weight: 500;  
     cursor: default;
     transition: transform 0.2s ease;
@@ -638,13 +647,18 @@ i.stat-icon {
     transform: scale(1.03);
 }
 
+.photo-christine{
+    max-height: 430px;
+    width: auto;
+}
+
 /* ================ card enfants =========================== */
 
 .child-card-horizontal-img {
         object-fit: cover;
         object-position: top center;
         height: 100% !important;
-        min-height: 380px; /* Минимальная высота для стабильности */
+        min-height: 380px;
     }
 
 .child-card{
@@ -659,7 +673,6 @@ i.stat-icon {
 
 .child-card:hover, .news-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* ----------------------------  */
@@ -700,14 +713,25 @@ i.stat-icon {
     object-fit: contain;
 }
 
+.section-trois .colibri-img{
+    margin-top: -40px;
+}
+
+.ensemble .colibri-img{
+    width: 55%;
+}
+
+.devenir-benevole .colibri-img{
+    width: 55%;
+}
+
 .colibri-img-histoire{
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
 .footer-colibri {
     width: 110px;
-    /* opacity: 0.9; */
 }
 
 
@@ -716,19 +740,20 @@ i.stat-icon {
 .prenom-card{
     color: #281809;
     font-family: "Poppins", sans-serif;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(2.5rem, 1.5vw, 3rem);
     font-weight: 700;
 }
 
 .age{      
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
     font-weight: 400;
 }
 
 .birth-date{
     color: #d86b42;
     font-weight: 500;
-    font-size: 1.1rem;    
+    font-size: clamp(.9rem, 1.5vw, 1.1rem);    
 }
 
 /* ======================================================= */
@@ -753,46 +778,6 @@ i.stat-icon {
     background-color: #dd9933;
     border-color: #dd9933;
 }
- 
-    /* Скрываем переключатель на ПК 
-    .expand-btn {
-        display: none !important;
-    }*/
-
-    /* Показываем ровно 3 строчки текста 
-    .expandable-text-container p.card-text {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .cursor-pointer {
-        cursor: pointer;
-        display: inline-block;
-    }*/
-
-    /* Состояния кнопки Читать дальше / Voir moins 
-    .expand-btn .text-less {
-        display: none;
-    }*/
-
-    /* Раскрытие текста при клике 
-    .expand-toggle:checked ~ p.card-text {
-        display: block !important;
-        -webkit-line-clamp: unset !important;
-        overflow: visible;
-    }
-
-    .expand-toggle:checked ~ .expand-btn .text-more {
-        display: none;
-    }
-
-    .expand-toggle:checked ~ .expand-btn .text-less {
-        display: inline;
-    }
-}*/
-
 
 /* =================== Nous contacte =========================== */
 
@@ -800,8 +785,7 @@ i.stat-icon {
 	padding: 1rem;
 }
 
-
-/* ================= hostoire ====================== */
+/* ================= histoire ====================== */
 
 .lien-histoir{
     color: #dd9933;
@@ -845,13 +829,292 @@ i.stat-icon {
     background-color: transparent;
     color: #281809;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    padding: 12px 30px;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: 8px 16px;
     border-radius: 30px;
     border: 1px solid #281809;
     transition: all 0.2s ease;
     text-decoration: none;
+}
+
+.zm-card {
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.zm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.zm-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;    
+}
+
+.article-card-img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.zm-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.zm-card-category {
+    font-size: 0.65rem;
+    font-weight: 400;
+    color: #d86b42;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.zm-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #281809;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    width: 80%;
+}
+
+.zm-card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.zm-card-link {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #d86b42;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    align-self: flex-start;
+}
+
+.zm-card-link:hover {
+    color: #281809;
+    text-decoration: underline;
+}
+
+.zm-card-date{
+    font-size: .7rem;
+}
+
+/* ====================== faq accordion =========================== */
+
+.accordion-button:not(.collapsed){
+    background-color: #F0D399;
+}
+
+.accordion-item{
+    border: none;
+}
+
+.accordion-button:focus {    
+    box-shadow: none;
+}
+
+
+/* ====================== section-famille =========================== */
+
+.section-famille .child-card-horizontal-img {
+    height: 100%;
+    min-height: 250px;
+    max-height: 420px;
+    object-fit: cover; 
+}
+
+.section-famille .card-body {
+    padding: 1.25rem;
+}
+
+.section-famille .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.section-famille .card {
+    height: auto;
+    max-height: none;
+}
+
+/* ==========================================   photo-carousel ========================================== */
+
+.carousel-container-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-photo-carousel-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0 1.5rem 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.desktop-photo-carousel-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.desktop-photo-carousel-wrapper::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.desktop-photo-carousel-wrapper::-webkit-scrollbar-thumb {
+    background: #281809;
+    border-radius: 4px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.carousel-slide {
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide img:hover {
+    transform: scale(1.03);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #281809; 
+    border: 1px solid rgba(140, 89, 59, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #281809;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-prev {
+    left: -20px; 
+}
+
+.carousel-next {
+    right: -20px;
+}
+
+/* ================================  télécharger documents officiels  ======================================== */
+
+.card-pdf{
+    min-width: 260px;
+    color: #281809;
+}
+
+/* ====================== MASONRY-СЕТКА ДЛЯ ПРОЕКТОВ =========================== */
+
+.projects-masonry {
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+}
+
+.zm-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.zm-card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+.masonry-item .zm-card {
+    height: auto !important;
+}
+
+/* Переключатели и раскрытие текста */
+.projet-toggle-checkbox,
+.read-more-checkbox {
+    display: none;
+}
+
+.zm-card-readmore,
+.read-more-btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #281809;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.zm-card-readmore:hover,
+.read-more-btn:hover {
+    text-decoration: underline;
+}
+
+.zm-card-readmore .readmore-collapse,
+.read-more-btn .less-text {
+    display: none;
 }
 
 /* ====================== footer =========================== */
@@ -907,5 +1170,302 @@ i.stat-icon {
 .btn-donate-small .fa-heart {
     font-size: 0.75rem;
 }
+
+/* ========================================== ========================================== */
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1, .titre-banner{
+        font-weight: 900;          
+        line-height: 1.2; 
+    }
+
+    .text-banner{
+        font-weight: 500;
+    }
+
+    .hero-content {        
+        justify-content: center;
+        padding-left: 100px;    
+    }
+
+    h2{
+        font-weight: 600;
+    }
+
+    .py-big{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .stat-label {    
+        font-size: 1.35rem;    
+    }
+
+    .stat-number {        
+        font-size: 2.5rem;
+    }    
+
+    .action-card-title {    
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .action-card-text {
+        font-size: 0.9rem;
+    }
+
+    .badge-tag {        
+        font-size: 1.1rem;
+    } 
+    
+    .page-banner-hero {
+        height: 750px;
+    }
+
+    .hero-carousel,
+    .hero-carousel .carousel-inner,
+    .hero-carousel .carousel-item {
+        height: 750px;
+    }
+
+    .section-famille .card {
+        max-height: 420px;
+    }
+
+    .section-famille .child-card-horizontal-img {
+        height: 100%;
+        max-height: 420px;
+    }
+
+    .card-fiscale{
+        width: 350px;
+    }
+}
+
+/* ========================================== */
+@media (max-width: 767.98px) {
+    .carousel-slide {
+    height: 240px;
+    border-radius: 0.75rem;
+    }  
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .carousel-prev {
+        left: -10px;
+    }
+    .carousel-next {
+        right: -10px;
+    }
+    .carousel-track {
+        gap: 0.85rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    
+    .child-card-horizontal-img {
+        height: 130px !important;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0.25rem;
+        transition: all 0.3s ease;
+    }
+    
+    .read-more-checkbox:checked ~ .card-text {
+        display: block;
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+}
+
+/* ========================================== */
+
+@media (max-width: 575.98px) {
+    .stats-banner article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stat-item {
+        width: 280px;
+        text-align: left;
+    }
+}
+
+/* =============================== cards enfants mobile =============================== */
+
+.read-more-checkbox {
+    display: none;
+}
+
+/* Lire la suite */
+.read-more-btn {
+    display: inline-block;
+    color: #281809;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: opacity 0.2s ease;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
+
+.read-more-btn .less-text {
+    display: none;
+}
+
+.read-more-checkbox:checked ~ .read-more-btn .more-text {
+    display: none;
+}
+
+.read-more-checkbox:checked ~ .read-more-btn .less-text {
+    display: inline;
+}
+
+
+
+
+
+/* ==========================================
+   Masonry-сетка для существующих zm-card
+   ========================================== */
+
+.projects-masonry {
+    column-count: 3; /* 3 колонки для комфортной ширины карточек с твоими шрифтами */
+    column-gap: 1.5rem;
+}
+
+.masonry-item {
+    break-inside: avoid; /* Запрет разрыва карточки между столбцами */
+    margin-bottom: 1.5rem; /* Вертикальный отступ между карточками */
+}
+
+/* Контейнер картинки для абсолютного позиционирования плашки "Réalisé" */
+.zm-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Накладываемая плашка поверх фото */
+.zm-card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+/* Сбрасываем h-100 для Masonry, чтобы карточка сжималась по своему содержимому */
+.masonry-item .zm-card {
+    height: auto !important;
+}
+
+/* Адаптивность колонок */
+@media (max-width: 991.98px) {
+    .projects-masonry {
+        column-count: 2; /* 2 колонки на планшетах */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .projects-masonry {
+        column-count: 1; /* 1 колонка на мобильных */
+    }
+}
+
+
+/* ==========================================
+   Раскрытие текста карточек проектов (5 строк)
+   ========================================== */
+
+/* Скрываем чекбокс управления */
+.projet-toggle-checkbox {
+    display: none;
+}
+
+/* Стили кнопки En savoir plus / Fermer */
+.zm-card-readmore {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.zm-card-readmore:hover {
+    text-decoration: underline;
+}
+
+.zm-card-readmore .readmore-collapse {
+    display: none;
+}
+
+
+/* --- МОБИЛЬНЫЕ УСТРОЙСТВА (до 991.98px) --- */
+@media (max-width: 991.98px) {
+    /* Ограничение контейнера текста до 5 строк */
+    .zm-card-text-container {
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* Ровно 5 строк видимого текста */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Когда чекбокс активен (кликнули по En savoir plus) — раскрываем весь текст */
+    .projet-toggle-checkbox:checked + .zm-card .zm-card-text-container {
+        display: block;
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+
+    /* Переключение текста кнопки с "En savoir plus" на "Fermer" */
+    .projet-toggle-checkbox:checked + .zm-card .readmore-expand {
+        display: none;
+    }
+
+    .projet-toggle-checkbox:checked + .zm-card .readmore-collapse {
+        display: inline-block;
+        color: #d86b42;
+    }
+}
+
+
+/* --- ДЕСКТОПЫ (от 992px) --- */
+@media (min-width: 992px) {
+    /* На компьютерах текст виден всегда полностью */
+    .zm-card-text-container {
+        display: block !important;
+        -webkit-line-clamp: unset !important;
+        overflow: visible !important;
+    }
+
+    /* Кнопку "En savoir plus" скрываем на десктопе, так как карточка в Masonry и так открыта */
+    .zm-card-readmore {
+        display: none !important;
+    }
+}
+
+
+
+
 
 

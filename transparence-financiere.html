@@ -18,31 +18,8 @@
 </head>
 <body>
 
-    <!-- icons 
-search       <i class="fa-solid fa-magnifying-glass"></i>
-facebook     <i class="fa-brands fa-square-facebook"></i>
-instagram    <i class="fa-brands fa-instagram"></i>
-youtube      <i class="fa-brands fa-youtube"></i>
-heart        <i class="fa-solid fa-heart"></i>
-sun          <i class="fa-regular fa-sun"></i>
-children     <i class="fa-solid fa-children"></i>
-envelope     <i class="fa-regular fa-envelope"></i>
-education    <i class="fa-solid fa-graduation-cap"></i>
-water        <i class="fa-solid fa-droplet"></i>
-apple        <i class="fa-solid fa-apple-whole"></i>
-heart+       <i class="fa-solid fa-heart-circle-plus"></i>
-electricite  <i class="fa-solid fa-lightbulb"></i>
-copyright    <i class="fa-regular fa-copyright"></i>
-
-<i class="fa-solid fa-angle-up"></i>
-<i class="fa-solid fa-angle-down"></i>
-<i class="fa-solid fa-angle-right"></i>
-<i class="fa-solid fa-angle-left"></i>
-
-    
-    -->
-
     <header id="top">
+        <div id="page-top"></div>
         <div class="px-big py-2 nav-top">
             <section class="row">
                 <article class="col-12">
@@ -75,7 +52,7 @@ copyright    <i class="fa-regular fa-copyright"></i>
             </section>
         </div>
 
-        <div class="nav-bottom bg-brown py-2">
+        <div id="mainNavbar" class="nav-bottom bg-brown py-2">
 
             <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
                 <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">               
@@ -168,26 +145,248 @@ copyright    <i class="fa-regular fa-copyright"></i>
 
     <main>
 
-        <img src="images/patience.png" alt="patience">
+        <div class="hero px-0"> <!-- banner -->
+            <section class="row g-0">
+                <article class="col-12">
+                    <div class="page-banner-hero" style="background-image: url('images/banniere_crowdfunding2.jpg');">
+                        <div class="hero-content hero-content-center">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <h1 class="titre-banner text-uppercase text-white"><span class="titre-banner-color">La transparence</span> financière</h1>
+                                    <p class="text-banner text-white mb-4">Une gestion responsable pour un impact durable</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-big">
+            <section class="row justify-content-center">
+                <article class="col-12 col-md-10">                    
+                    <div class="text-center mb-4">
+                        <h2 class="section-title mb-3">La transparence financière</h2>
+                    </div>                
+                    
+                    <div class="row g-4 text-start text-md-start">
+                        <div class="col-12 col-md-6">
+                            <div class="p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="section-text mb-3">
+                                        Chez Zazany Madagascar, chaque euro compte. Veillons à une gestion rigoureuse et transparente des fonds qui nous sont confiés, afin de garantir un soutien efficace et durable aux enfants et aux familles. Parmi les valeurs de notre association, « la transparence » en fait partie.
+                                    </p>
+                                    <p class="section-text m-0">
+                                        Cela nous semble donc important que vous sachiez comment sont utilisés vos dons dans le cadre de la solidarité et de partage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6">
+                            <div class="p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="section-text mb-3">
+                                        Pour l’instant, nous n’avons pas recours à un commissaire aux comptes étant donné que nous n’avons pas de ressources financières dépassant les 153 000€ par an, un des critères qui oblige une association à avoir un commissaire aux comptes.
+                                    </p>
+                                    <p class="section-text m-0">
+                                        En effet, Zazany Madagascar est une jeune association qui a plusieurs années d’activités et malgré plusieurs projets déjà accomplis, nous n’avons pas encore bénéficié de subventions publiques. Néanmoins, la désignation d’un commissaire aux comptes dans le cadre de la transparence est prévue dans nos statuts lorsque notre association aura remplie les critères demandées à cet effet. 
+                                        <a href="nous-contacter.html" class="lien-histoir">Retrouvez nos statuts</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>    
 
+                <article class="col-12 col-md-10 mt-3">   
+                    
+                    <div class="text-center mb-4">
+                        <h2 class="section-title mb-3">Comment ça fonctionne ?</h2>
+                        <p class="section-text text-center mb-2">
+                            Chaque euro a été utilisé pour soutenir directement nos actions sur le terrain. Voici comment se répartissent les dépenses :
+                        </p>
+                    </div>
+
+                    <div class="row align-items-center g-5 mt-2">                        
+                        <div class="col-12 col-md-6 text-center">
+                            <img src="images/diagramma.jpeg" alt="Répartition des dépenses" class="img-fluid">
+                        </div>
+                        
+                        <div class="col-12 col-md-6 text-center d-flex flex-column gap-4">                            
+
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge rounded-circle p-3 bg-green fs-5">87%</span>
+                                <span class="section-text fw-bold color-brown m-0">Soutien aux actions sur le terrain</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge rounded-circle p-3 bg-ohra fs-5">8%</span>
+                                <span class="section-text fw-bold color-brown m-0">Fonctionnement et autres charges</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge rounded-circle p-3 bg-yellow text-dark fs-5">4%</span>
+                                <span class="section-text fw-bold color-brown m-0">Développement et autres ressources</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge rounded-circle p-3 bg-brown fs-5">1%</span>
+                                <span class="section-text fw-bold color-brown m-0">Information et communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-big">
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-10 text-center">                    
+                    <h2 class="section-title mb-2">Nos rapports d’activité</h2>
+                    <p class="section-text text-center mb-4">Vous pouvez consulter et télécharger nos documents officiels :</p>
+                    
+                    <div class="carousel-container-wrap">
+                        <button class="carousel-btn carousel-prev" onclick="document.getElementById('pdfCarousel').scrollBy({left: -300, behavior: 'smooth'})" aria-label="Précédent">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="desktop-photo-carousel-wrapper" id="pdfCarousel">
+                            <div class="carousel-track justify-content-center">
+                                <!-- PDF 1 -->
+                                <div class="p-4 card-pdf bg-lait rounded-4 shadow-sm border text-center">
+                                    <i class="fa-solid fa-file-pdf text-danger display-4 mb-2"></i>
+                                    <h5 class="fw-bold mb-1">Rapport d'activité 2019</h5>
+                                    <p class="small text-muted mb-3">PDF - 2.4 Mb</p>
+                                    <a href="PDF/2019RAPPORTACTIVITESANNUELZAZANYMADAGASCAR.pdf" target="_blank" class="btn btn-outline-dark text-uppercase btn-sm fw-bold px-3">
+                                        Télécharger <i class="fa-solid fa-download ms-1"></i>
+                                    </a>
+                                </div>
+
+                                <!-- PDF 2 -->
+                                <div class="p-4 card-pdf bg-lait rounded-4 shadow-sm border text-center">
+                                    <i class="fa-solid fa-file-pdf text-danger display-4 mb-2"></i>
+                                    <h5 class="fw-bold mb-1">Rapport d'activité 2020</h5>
+                                    <p class="small text-muted mb-3">PDF - 2.8 Mb</p>
+                                    <a href="PDF/RapportActivitesAnnuel2020_Association_Zazany_Madagascar.pdf" target="_blank" class="btn btn-outline-dark text-uppercase btn-sm fw-bold px-3">
+                                        Télécharger <i class="fa-solid fa-download ms-1"></i>
+                                    </a>
+                                </div>
+
+                                <!-- PDF 3 -->
+                                <div class="p-4 card-pdf bg-lait rounded-4 shadow-sm border text-center">
+                                    <i class="fa-solid fa-file-pdf text-danger display-4 mb-2"></i>
+                                    <h5 class="fw-bold mb-1">Rapport d'activité 2022</h5>
+                                    <p class="small text-muted mb-3">PDF - 3.1 Mb</p>
+                                    <a href="PDF/RAPPORT_D_ACTIVITES_2022_ZAZANY_MADAGASCAR.pdf" target="_blank" class="btn btn-outline-dark text-uppercase btn-sm fw-bold px-3">
+                                        Télécharger <i class="fa-solid fa-download ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-next" onclick="document.getElementById('pdfCarousel').scrollBy({left: 300, behavior: 'smooth'})" aria-label="Suivant">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-5">
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-9">
+                    <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm text-start d-flex flex-column gap-3">
+                        <p class="section-text text-muted m-0">
+                            Pour l’instant, nous n’avons pas recours à un commissaire aux comptes étant donné que nous n’avons pas de ressources financières dépassant les 153 000€ par an, un des critères qui oblige une association à avoir un commissaire aux comptes.
+                        </p>
+                        <p class="section-text text-muted m-0">
+                            En effet, Zazany Madagascar est une jeune association qui a plusieurs années d’activités et malgré plusieurs projets déjà accomplis, nous n’avons pas encore bénéficié de subventions publiques. Néanmoins, la désignation d’un commissaire aux comptes dans le cadre de la transparence est prévue dans nos statuts lorsque notre association aura remplie les critères demandés à cet effet.
+                        </p>
+                        <div>
+                            <a href="nous-contacter.html" class="color-brown fw-bold text-decoration-underline">Retrouvez nos statuts</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="bg-lait px-big py-big"> <!-- texts + boutons -->
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-10">
+                    <h3 class="fw-bold mb-5 text-start color-brown">Nous avons plus que jamais besoin de vous pour améliorer la vie des enfants démunis de Madagascar</h3>
+                    
+                    <div class="d-flex flex-column gap-5">                            
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-7 text-start">
+                                <p class="section-text m-0 color-brown">
+                                    Vous ne pouvez peut-être pas faire de don, mais la cause des enfants démunis vous tient à cœur. Rejoignez-nous pour aider à développer l’association à Paris.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-5 text-center">
+                                <a href="devenir-benevole.html" class="btn btn-dark-cta text-uppercase text-uppercase d-inline-flex align-items-center justify-content-center">
+                                    Devenir bénévole
+                                    <img src="images/glyphs_heart-hands-bold.png" alt="devenir-benevole" class="btn-png-icon ms-2">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center g-4 flex-column-reverse flex-md-row">
+                            <div class="col-12 col-md-5 text-center">
+                                <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn btn-dark-cta text-uppercase">
+                                    Faire un don solidaire <i class="fa-solid fa-heart ms-1"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-7 text-start">
+                                <p class="section-text m-0 color-brown">
+                                    Faire un don, c’est soutenir et protéger l’enfance en détresse. Vos contributions sont des ressources précieuses pour mener à bien nos actions humanitaires sur le terrain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="bg-yellow"><!-- Vous avez des questions ? -->
+            <div class="px-big py-5">
+                <section class="row">
+                    <article class="col-12">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 text-center text-md-start">
+                            
+                            <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                <i class="fa-solid fa-hand-holding-heart faq-icon color-brown"></i>
+                                <div class="ms-4">
+                                    <h3 class="fw-bold color-brown mb-1">Vous avez des questions ?</h3>
+                                    <p class="color-brown m-0">
+                                        N'hésitez pas à nous contacter, nous serons ravis de vous répondre.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="nous-contacter.html" class="btn btn-dark-cta text-uppercase rounded-pill py-2 px-4 flex-shrink-0">
+                                Nous contacter
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer class="footer-wrapper">
         <div class="bg-brown py-2">
             <section class="row align-items-center">                
-                <article class="logo col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="logo col-6 col-md-4 text-end text--md-center mb-3 mb-md-0">
                     <a href="index.html" class="d-inline-block">
                         <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
                     </a>
                 </article>
                 
-                <article class="colibri col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="colibri col-6 col-md-4 text-start text-md-center mb-3 mb-md-0">
                     <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
                 </article>
 
-                <article class="socio col-12 col-md-4 text-center text-md-start">
+                <article class="socio col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
-                    <div class="footer-social-icons d-flex align-items-center gap-4">
+                    <div class="footer-social-icons d-flex align-items-center justify-content-center justify-content-md-start gap-4">
                         <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
@@ -210,17 +409,17 @@ copyright    <i class="fa-regular fa-copyright"></i>
                 <article class="col-12">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
                         
-                        <div class="copyright-links mb-2 mb-md-0">
-                            <span>&copy; Association Zazany Madagascar 2026</span>
-                            <span class="mx-1">|</span>
-                            <a href="mentions-legales.html" class="text-secondary text-decoration-none">Mentions Légales</a>
-                            <span class="mx-1">|</span>
-                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none">Politique De Confidentialité</a>
+                        <div class="copyright-links mb-2 mb-md-0 d-flex flex-column flex-md-row text-center mb-2 mb-md-0">
+                            <span class="mb-2 mb-md-0">&copy; Association Zazany Madagascar 2026</span>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="mentions-legales.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Mentions Légales</a>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Politique De Confidentialité</a>
                         </div>
 
                         <div class="donate-mini">
                             <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
-                                <i class="fa-solid fa-heart text-danger me-1"></i>
+                                <i class="fa-solid fa-heart color-red me-1"></i>
                                 Faire Un Don
                             </a>
                         </div>
@@ -231,9 +430,10 @@ copyright    <i class="fa-regular fa-copyright"></i>
         </div>
     </footer>
 
-    <a class="back-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="js/header-scroll.js"></script>
+    </body>
 </html>

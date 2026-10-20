@@ -18,31 +18,8 @@
 </head>
 <body>
 
-    <!-- icons 
-search       <i class="fa-solid fa-magnifying-glass"></i>
-facebook     <i class="fa-brands fa-square-facebook"></i>
-instagram    <i class="fa-brands fa-instagram"></i>
-youtube      <i class="fa-brands fa-youtube"></i>
-heart        <i class="fa-solid fa-heart"></i>
-sun          <i class="fa-regular fa-sun"></i>
-children     <i class="fa-solid fa-children"></i>
-envelope     <i class="fa-regular fa-envelope"></i>
-education    <i class="fa-solid fa-graduation-cap"></i>
-water        <i class="fa-solid fa-droplet"></i>
-apple        <i class="fa-solid fa-apple-whole"></i>
-heart+       <i class="fa-solid fa-heart-circle-plus"></i>
-electricite  <i class="fa-solid fa-lightbulb"></i>
-copyright    <i class="fa-regular fa-copyright"></i>
-
-<i class="fa-solid fa-angle-up"></i>
-<i class="fa-solid fa-angle-down"></i>
-<i class="fa-solid fa-angle-right"></i>
-<i class="fa-solid fa-angle-left"></i>
-
-    
-    -->
-
     <header id="top">
+        <div id="page-top"></div>
         <div class="px-big py-2 nav-top">
             <section class="row">
                 <article class="col-12">
@@ -75,7 +52,7 @@ copyright    <i class="fa-regular fa-copyright"></i>
             </section>
         </div>
 
-        <div class="nav-bottom bg-brown py-2">
+        <div id="mainNavbar" class="nav-bottom bg-brown py-2">
 
             <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
                 <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">               
@@ -168,26 +145,265 @@ copyright    <i class="fa-regular fa-copyright"></i>
 
     <main>
 
-        <img src="images/patience.png" alt="patience">
+        <div class="hero px-0"> <!-- banner -->
+            <section class="row g-0">
+                <article class="col-12">
+                    <div class="page-banner-hero" style="background-image: url('images/banniere_crowdfunding2.jpg');">
+                        <div class="hero-content hero-content-center">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <h1 class="titre-banner text-uppercase text-white">Réduction fiscale</h1>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-big">
+            <section class="row justify-content-center">
+                <article class="col-12 col-md-10">
+                    <div class="text-center mb-5 mx-auto">
+                        <h2 class="section-title mb-2">Réduction fiscale</h2>
+                        <h3 class="fw-bold color-brown mb-3">Votre générosité a encore plus de valeur</h3>
+                        <p class="section-text mb-3">
+                            En tant que donateur, vous pouvez bénéficier d’une réduction d’impôt sur le revenu pour tout don effectué à Zazany Madagascar. Un geste solidaire qui soutient les enfants et qui vous permet aussi de faire des économies.
+                        </p>
+                        <p class="section-text m-0">
+                            Le don à l'Association ZAZANY MADAGASCAR ouvre droit à une réduction fiscale car il remplit les conditions générales prévues aux articles 200, 238 bis et 978 du code général des impôts.
+                        </p>
+                    </div>
 
+                    <h3 class="fw-bold color-brown mb-4 text-center text-md-start">Comment ça fonctionne ?</h3>
+
+                    <div class="row g-4 align-items-stretch">
+                        
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                            <div class="p-4 bg-lait rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between border-start border-4 border-warning">
+                                <div>
+                                    <h5 class="fw-bold color-brown mb-2">Une réduction d’impôt de 66 %</h5>
+                                    <p class="section-text mb-4">
+                                        Les dons versés à notre association ouvrent droit à une réduction d’impôt de <strong>66 % du montant de votre don</strong>, dans la limite de 20 % de votre revenu imposable.
+                                    </p>
+                                </div>
+                                
+                                <div class="p-3 bg-white rounded-3 border">
+                                    <span class="badge bg-yellow text-uppercase mb-2 fw-bold">Exemple</span>
+                                    <p class="section-text m-0">
+                                        Un don de <strong class="fs-5 color-brown">100 €</strong> vous coûte réellement <strong class="fs-4 text-danger fw-bold">34 €</strong> après réduction d’impôt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6">
+                            <div class="p-4 bg-lait rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between border-start border-4 border-warning gap-3">
+                                <div class="d-flex align-items-start gap-3">
+                                    <span class="badge rounded-circle bg-yellow fs-5 px-3 py-2 fw-bold">1</span>
+                                    <p class="section-text m-0">
+                                        Vous faites un don à Zazany Madagascar (par virement, chèque ou en ligne).
+                                    </p>
+                                </div>
+                                <hr class="my-1">
+                                <div class="d-flex align-items-start gap-3">
+                                    <span class="badge rounded-circle bg-yellow fs-5 px-3 py-2 fw-bold">2</span>
+                                    <p class="section-text m-0">
+                                        Nous vous délivrons un reçu fiscal dès réception de votre don.
+                                    </p>
+                                </div>
+                                <hr class="my-1">
+                                <div class="d-flex align-items-start gap-3">
+                                    <span class="badge rounded-circle bg-yellow fs-5 px-3 py-2 fw-bold">3</span>
+                                    <p class="section-text m-0">
+                                        Vous déduisez 66 % du montant de votre don de votre impôt sur le revenu, dans la limite de 20 % de vos revenus imposables.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-big">
+            <section class="row justify-content-center">
+
+                <article class="col-12 mb-4">
+                    <h2 class="section-title text-center">Quels sont les avantages ?</h2>                    
+                </article>
+
+                <article class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        
+                        <div class="col-6 col-md-3">                        
+                            <div class="action-card card-fiscale bg-lait shadow-sm p-3 rounded-4 text-center">
+                                <i class="fa-solid fa-piggy-bank action-card-icon mb-2"></i>                            
+                                <p class="section-text-text text-muted m-0">
+                                    Une réduction d'impôt importante
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">                        
+                            <div class="action-card card-fiscale bg-lait shadow-sm p-3 rounded-4 text-center">
+                                <i class="fa-solid fa-heart action-card-icon mb-2"></i>                            
+                                <p class="section-text-text text-muted m-0">
+                                    Un soutien concret aux enfants et aux familles
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">                        
+                            <div class="action-card card-fiscale bg-lait shadow-sm p-3 rounded-4 text-center">
+                                <i class="fa-solid fa-leaf action-card-icon mb-2"></i>                            
+                                <p class="section-text-text text-muted m-0">
+                                    Une démarche simple et rapide
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">                        
+                            <div class="action-card card-fiscale bg-lait shadow-sm p-3 rounded-4 text-center">
+                                <i class="fa-solid fa-handshake-angle action-card-icon mb-2"></i>                            
+                                <p class="section-text-text text-muted m-0">
+                                    Un impact direct et durable
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="bg-lait px-big py-4">
+            <section class="row justify-content-center">
+                <article class="col-12 col-md-10">
+                    <div class="row align-items-stretch g-5">
+                        <div class="col-12 col-md-5 text-center">
+                            <img src="images/tables-et-bancs-amboditavolo-2.jpg" alt="Enfant qui étudie" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-12 col-md-7 text-center d-flex flex-column">
+                            <div class="text-center">
+                                <h3 class="fw-bold color-brown my-3">Votre don change des vies</h3>
+                                <p class="section-text mb-4">
+                                    Grâce à votre soutien, nous pouvons financer la scolarité, l’accès aux soins, à la nourriture et à un avenir meilleur pour des centaines d’enfants et de familles à Madagascar.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-3">
+                                <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-cta text-decoration-none text-uppercase d-inline-block mx-auto">
+                                    Faire un don solidaire <i class="fa-solid fa-heart ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        
+        <div class="px-big py-5">
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-9">
+                    <div class="d-flex flex-column gap-4 text-start">
+                        <!-- Particulier -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h4 class="fw-bold color-brown mb-3">Particulier</h4>
+                            <p class="section-text text-muted mb-0">
+                                Vous pouvez déduire 66% de votre don dans la limite de 20% de votre revenu imposable. Si vous êtes redevable de l’Impôt sur la Fortune Immobilière (IFI), vous bénéficiez d’une réduction de votre IFI égale à 75 % du montant de votre don, dans la limite de 50 000 euros. Attention, la fraction de don ayant donné lieu à réduction d'IFI ne peut ouvrir droit, parallèlement, à réduction d'IR. Lorsque le don est éligible aux deux dispositifs, le donateur pourra choisir l'un ou l'autre ou bien décider de ventiler son don.
+                            </p>
+                        </div>
+
+                        <!-- Organisme -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h4 class="fw-bold color-brown mb-3">Organisme / Entreprise</h4>
+                            <p class="section-text text-muted mb-0">
+                                L’ensemble des versements à l’Association ZAZANY MADAGASCAR permet de bénéficier d’une réduction d’impôt sur les sociétés de 60% du montant de ces versements, pris dans la limite de 5 / 1000 du C.A. H.T. de l’entreprise. Au-delà de 5 / 1000 ou en cas d’exercice déficitaire, l’excédent est reportable.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="bg-lait px-big py-big"> <!-- texts + boutons -->
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-10">
+                    <h3 class="fw-bold mb-5 text-start color-brown">Nous avons plus que jamais besoin de vous pour améliorer la vie des enfants démunis de Madagascar</h3>
+                    
+                    <div class="d-flex flex-column gap-5">                            
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-7 text-start">
+                                <p class="section-text m-0 color-brown">
+                                    Vous ne pouvez peut-être pas faire de don, mais la cause des enfants démunis vous tient à cœur. Rejoignez-nous pour aider à développer l’association à Paris.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-5 text-center">
+                                <a href="devenir-benevole.html" class="btn btn-dark-cta text-uppercase text-uppercase d-inline-flex align-items-center justify-content-center">
+                                    Devenir bénévole
+                                    <img src="images/glyphs_heart-hands-bold.png" alt="devenir-benevole" class="btn-png-icon ms-2">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center g-4 flex-column-reverse flex-md-row">
+                            <div class="col-12 col-md-5 text-center">
+                                <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn btn-dark-cta text-uppercase">
+                                    Faire un don solidaire <i class="fa-solid fa-heart ms-1"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-7 text-start">
+                                <p class="section-text m-0 color-brown">
+                                    Faire un don, c’est soutenir et protéger l’enfance en détresse. Vos contributions sont des ressources précieuses pour mener à bien nos actions humanitaires sur le terrain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="bg-yellow"><!-- Vous avez des questions ? -->
+            <div class="px-big py-5">
+                <section class="row">
+                    <article class="col-12">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 text-center text-md-start">
+                            
+                            <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                <i class="fa-solid fa-hand-holding-heart faq-icon color-brown"></i>
+                                <div class="ms-4">
+                                    <h3 class="fw-bold color-brown mb-1">Vous avez des questions ?</h3>
+                                    <p class="color-brown m-0">
+                                        N'hésitez pas à nous contacter, nous serons ravis de vous répondre.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="nous-contacter.html" class="btn btn-dark-cta text-uppercase rounded-pill py-2 px-4 flex-shrink-0">
+                                Nous contacter
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer class="footer-wrapper">
         <div class="bg-brown py-2">
             <section class="row align-items-center">                
-                <article class="logo col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="logo col-6 col-md-4 text-end text--md-center mb-3 mb-md-0">
                     <a href="index.html" class="d-inline-block">
                         <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
                     </a>
                 </article>
                 
-                <article class="colibri col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="colibri col-6 col-md-4 text-start text-md-center mb-3 mb-md-0">
                     <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
                 </article>
 
-                <article class="socio col-12 col-md-4 text-center text-md-start">
+                <article class="socio col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
-                    <div class="footer-social-icons d-flex align-items-center gap-4">
+                    <div class="footer-social-icons d-flex align-items-center justify-content-center justify-content-md-start gap-4">
                         <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
@@ -210,17 +426,17 @@ copyright    <i class="fa-regular fa-copyright"></i>
                 <article class="col-12">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
                         
-                        <div class="copyright-links mb-2 mb-md-0">
-                            <span>&copy; Association Zazany Madagascar 2026</span>
-                            <span class="mx-1">|</span>
-                            <a href="mentions-legales.html" class="text-secondary text-decoration-none">Mentions Légales</a>
-                            <span class="mx-1">|</span>
-                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none">Politique De Confidentialité</a>
+                        <div class="copyright-links mb-2 mb-md-0 d-flex flex-column flex-md-row text-center mb-2 mb-md-0">
+                            <span class="mb-2 mb-md-0">&copy; Association Zazany Madagascar 2026</span>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="mentions-legales.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Mentions Légales</a>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Politique De Confidentialité</a>
                         </div>
 
                         <div class="donate-mini">
                             <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
-                                <i class="fa-solid fa-heart text-danger me-1"></i>
+                                <i class="fa-solid fa-heart color-red me-1"></i>
                                 Faire Un Don
                             </a>
                         </div>
@@ -231,9 +447,10 @@ copyright    <i class="fa-regular fa-copyright"></i>
         </div>
     </footer>
 
-    <a class="back-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/header-scroll.js"></script>
 </body>
 </html>

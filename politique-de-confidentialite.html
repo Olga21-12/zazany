@@ -18,31 +18,8 @@
 </head>
 <body>
 
-    <!-- icons 
-search       <i class="fa-solid fa-magnifying-glass"></i>
-facebook     <i class="fa-brands fa-square-facebook"></i>
-instagram    <i class="fa-brands fa-instagram"></i>
-youtube      <i class="fa-brands fa-youtube"></i>
-heart        <i class="fa-solid fa-heart"></i>
-sun          <i class="fa-regular fa-sun"></i>
-children     <i class="fa-solid fa-children"></i>
-envelope     <i class="fa-regular fa-envelope"></i>
-education    <i class="fa-solid fa-graduation-cap"></i>
-water        <i class="fa-solid fa-droplet"></i>
-apple        <i class="fa-solid fa-apple-whole"></i>
-heart+       <i class="fa-solid fa-heart-circle-plus"></i>
-electricite  <i class="fa-solid fa-lightbulb"></i>
-copyright    <i class="fa-regular fa-copyright"></i>
-
-<i class="fa-solid fa-angle-up"></i>
-<i class="fa-solid fa-angle-down"></i>
-<i class="fa-solid fa-angle-right"></i>
-<i class="fa-solid fa-angle-left"></i>
-
-    
-    -->
-
-    <header id="top">
+    <header id="top">        
+        <div id="page-top"></div>
         <div class="px-big py-2 nav-top">
             <section class="row">
                 <article class="col-12">
@@ -75,7 +52,7 @@ copyright    <i class="fa-regular fa-copyright"></i>
             </section>
         </div>
 
-        <div class="nav-bottom bg-brown py-2">
+        <div id="mainNavbar" class="nav-bottom bg-brown py-2">
 
             <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
                 <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">               
@@ -168,26 +145,156 @@ copyright    <i class="fa-regular fa-copyright"></i>
 
     <main>
 
-        <img src="images/patience.png" alt="patience">
+        <div class="hero px-0"> <!-- banner -->
+            <section class="row g-0">
+                <article class="col-12">
+                    <div class="page-banner-hero" style="background-image: url('images/devenir_benevole.png');">
+                        <div class="hero-content hero-content-center">
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <h1 class="titre-banner text-uppercase text-white">Politique de confidentialité</h1>
+                                    <p class="text-banner text-white mb-4">Comment l'Association Zazany Madagascar protège et traite vos données personnelles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>        
+           
+        <div class="px-big py-big">
+            <section class="row justify-content-center">
+                <article class="col-12 col-lg-9">
+                    <div class="d-flex flex-column gap-4">
+                        
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">1. À Propos De Cette Déclaration de Confidentialité</h3>
+                            <p class="section-text mb-3">
+                                Nous nous assurons de protéger les informations que vous nous donnez. L’éditeur de notre site web <strong>www.zazany-madagascar.com</strong> est l’<strong>Association Zazany Madagascar</strong>, sise au 9 rue des Charrons, 45380 Chaingy. La responsable éditoriale est Mlle HOBIMANANTSOA Tiana. Notre association est enregistrée sous le numéro <strong>W751244691</strong>.
+                            </p>
+                        </div>
+                        
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">2. Comment Nous Collectons Vos Informations ?</h3>
+                            <p class="section-text text-muted mb-2">Nous collectons des informations selon plusieurs canaux :</p>
+                            <ul class="section-text text-muted ps-3 mb-3 d-flex flex-column gap-1">
+                                <li>Directement auprès de vous</li>
+                                <li>Indirectement via nos partenaires</li>
+                                <li>Par le biais des réseaux sociaux</li>
+                                <li>À travers les cookies lors de votre navigation sur notre site web</li>
+                            </ul>
+    
+                            <h5 class="fw-bold color-brown mt-4 mb-2">Directement</h5>
+                            <p class="section-text text-muted mb-3">
+                                Vous êtes susceptibles de nous communiquer des informations personnelles lorsque vous demandez à devenir membre, communiquez avec nous, vous enregistrez pour un événement, vous abonnez à notre newsletter ou laissez un commentaire.
+                            </p>
+    
+                            <h5 class="fw-bold color-brown mt-4 mb-2">Indirectement et Réseaux Sociaux</h5>
+                            <p class="section-text text-muted mb-3">
+                                Nous pouvons obtenir des informations via nos partenaires (avec votre consentement) ou à partir de vos comptes sur les réseaux sociaux (Facebook, Twitter) si vos paramètres de confidentialité le permettent.
+                            </p>
+    
+                            <h5 class="fw-bold color-brown mt-4 mb-2">Cookies</h5>
+                            <p class="section-text text-muted mb-3">
+                                Les cookies sont de petits fichiers textes stockés sur votre navigateur pour faciliter votre navigation, gérer vos connexions et analyser l’audience du site via <strong>Google Analytics</strong> (qui ne collecte ni données personnelles ni adresse IP).
+                            </p>
+                            <p class="section-text text-muted mb-2">Vous pouvez contrôler et désactiver les cookies à tout moment via les paramètres de votre navigateur :</p>
+                            <ul class="section-text text-muted ps-3 mb-0 d-flex flex-column gap-1">
+                                <li><a href="https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" class="color-brown text-decoration-underline">Internet Explorer</a></li>
+                                <li><a href="https://privacy.microsoft.com/fr-fr/windows-10-microsoft-edge-and-privacy" target="_blank" class="color-brown text-decoration-underline">Microsoft Edge</a></li>
+                                <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class="color-brown text-decoration-underline">Mozilla Firefox</a></li>
+                                <li><a href="https://support.apple.com/fr-fr/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" class="color-brown text-decoration-underline">Safari</a></li>
+                                <li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en" target="_blank" class="color-brown text-decoration-underline">Google Chrome</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Статья 3 -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">3. Quelles Données Nous Recoltons ?</h3>
+                            <p class="section-text text-muted mb-2">Si vous vous inscrivez pour nous rejoindre, nous collectons généralement :</p>
+                            <ul class="section-text text-muted ps-3 mb-0 d-flex flex-column gap-1">
+                                <li>Votre prénom et nom de famille</li>
+                                <li>La date d’adhésion à l’Association Zazany Madagascar</li>
+                                <li>Votre adresse e-mail personnelle et adresse postale</li>
+                                <li>Votre numéro de téléphone</li>
+                                <li>La date de paiement de votre cotisation ou de vos dons</li>
+                            </ul>
+                        </div>
+    
+                        <!-- Статья 4 и 5 -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">4 & 5. Utilisation des Informations et Commentaires</h3>
+                            <p class="section-text text-muted mb-3">
+                                Vos données ne sont utilisées que pour les finalités pour lesquelles vous les avez fournies (répondre à vos demandes, traiter votre adhésion, vous envoyer des actualités, planifier des événements ou respecter nos obligations statutaires).
+                            </p>
+                            <p class="section-text text-muted mb-0">
+                                Lorsque vous laissez un commentaire sur notre site, les données du formulaire, votre adresse IP et l’agent utilisateur sont collectés pour aider à la détection des commentaires indésirables.
+                            </p>
+                        </div>
+    
+                        <!-- Статья 6, 7 & 8 -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">6, 7 & 8. Désabonnement, Contenu et Conservation</h3>
+                            <p class="section-text text-muted mb-3">
+                                <strong>Se désabonner :</strong> Des instructions détaillées figurent en bas de chaque e-mail si vous ne souhaitez plus recevoir nos actualités.
+                            </p>
+                            <p class="section-text text-muted mb-3">
+                                <strong>Contenu embarqué :</strong> Les articles de ce site peuvent inclure des contenus intégrés (vidéos, images) qui se comportent comme si vous visitiez ces sites tiers.
+                            </p>
+                            <p class="section-text text-muted mb-0">
+                                <strong>Durée de conservation :</strong> Vos données sont conservées uniquement pour la durée nécessaire aux finalités prévues (par exemple, 3 ans à compter du dernier échange via les formulaires de contact).
+                            </p>
+                        </div>
+    
+                        <!-- Статья 9: Droits des utilisateurs -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning">
+                            <h3 class="fw-bold color-brown mb-3">9. Quels sont les droits que vous avez sur vos données ?</h3>
+                            <p class="section-text text-muted mb-3">
+                                Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition au traitement de vos données.
+                            </p>
+                            <div class="p-3 bg-lait rounded-3 border mb-3">
+                                <p class="section-text fw-bold color-brown m-0">
+                                    Pour exercer vos droits :<br>
+                                    Par courrier : L’Association Zazany Madagascar, 9 Rue des Charrons 45380 Chaingy (accompagné d'une copie de pièce d'identité).<br>
+                                    Par e-mail : <a href="mailto:zazanymadagascar@gmail.com" class="color-brown text-decoration-underline">zazanymadagascar@gmail.com</a>
+                                </p>
+                            </div>
+                            <p class="section-text text-muted small m-0">
+                                Vous pouvez également introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" class="color-brown text-decoration-underline">www.cnil.fr</a>).
+                            </p>
+                        </div>
+    
+                        <!-- Статья 10 -->
+                        <div class="p-4 p-md-5 bg-lait rounded-4 shadow-sm border-start border-4 border-warning text-center">
+                            <h3 class="fw-bold color-brown mb-2">10. Consentement</h3>
+                            <p class="section-text text-muted m-0">
+                                En utilisant notre site web, vous consentez expressément à notre politique de confidentialité.
+                            </p>
+                        </div>
+    
+                    </div>
+                </article>
+            </section>
+        </div>       
 
     </main>
 
     <footer class="footer-wrapper">
         <div class="bg-brown py-2">
             <section class="row align-items-center">                
-                <article class="logo col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="logo col-6 col-md-4 text-end text--md-center mb-3 mb-md-0">
                     <a href="index.html" class="d-inline-block">
                         <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
                     </a>
                 </article>
                 
-                <article class="colibri col-6 col-md-4 text-center mb-3 mb-md-0">
+                <article class="colibri col-6 col-md-4 text-start text-md-center mb-3 mb-md-0">
                     <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
                 </article>
 
-                <article class="socio col-12 col-md-4 text-center text-md-start">
+                <article class="socio col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
-                    <div class="footer-social-icons d-flex align-items-center gap-4">
+                    <div class="footer-social-icons d-flex align-items-center justify-content-center justify-content-md-start gap-4">
                         <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
@@ -210,17 +317,17 @@ copyright    <i class="fa-regular fa-copyright"></i>
                 <article class="col-12">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
                         
-                        <div class="copyright-links mb-2 mb-md-0">
-                            <span>&copy; Association Zazany Madagascar 2026</span>
-                            <span class="mx-1">|</span>
-                            <a href="mentions-legales.html" class="text-secondary text-decoration-none">Mentions Légales</a>
-                            <span class="mx-1">|</span>
-                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none">Politique De Confidentialité</a>
+                        <div class="copyright-links mb-2 mb-md-0 d-flex flex-column flex-md-row text-center mb-2 mb-md-0">
+                            <span class="mb-2 mb-md-0">&copy; Association Zazany Madagascar 2026</span>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="mentions-legales.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Mentions Légales</a>
+                            <span class="mx-1 d-none d-md-block">|</span>
+                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Politique De Confidentialité</a>
                         </div>
 
                         <div class="donate-mini">
                             <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
-                                <i class="fa-solid fa-heart text-danger me-1"></i>
+                                <i class="fa-solid fa-heart color-red me-1"></i>
                                 Faire Un Don
                             </a>
                         </div>
@@ -231,9 +338,10 @@ copyright    <i class="fa-regular fa-copyright"></i>
         </div>
     </footer>
 
-    <a class="back-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="back-to-top" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/header-scroll.js"></script>
 </body>
 </html>

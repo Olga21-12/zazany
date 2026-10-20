@@ -1,423 +1,473 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css"> 
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <title>FAQ Parrainage - Association Zazany Madagascar</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>FAQ Parrainage - Association Zazany Madagascar</title>
 </head>
+
 <body>
 
-    <!-- icons 
-search       <i class="fa-solid fa-magnifying-glass"></i>
-facebook     <i class="fa-brands fa-square-facebook"></i>
-instagram    <i class="fa-brands fa-instagram"></i>
-youtube      <i class="fa-brands fa-youtube"></i>
-heart        <i class="fa-solid fa-heart"></i>
-sun          <i class="fa-regular fa-sun"></i>
-children     <i class="fa-solid fa-children"></i>
-envelope     <i class="fa-regular fa-envelope"></i>
-education    <i class="fa-solid fa-graduation-cap"></i>
-water        <i class="fa-solid fa-droplet"></i>
-apple        <i class="fa-solid fa-apple-whole"></i>
-heart+       <i class="fa-solid fa-heart-circle-plus"></i>
-electricite  <i class="fa-solid fa-lightbulb"></i>
-copyright    <i class="fa-regular fa-copyright"></i>
+  <header id="top">
+    <div id="page-top"></div>
+    <div class="px-big py-2 nav-top">
+      <section class="row">
+        <article class="col-12">
+          <div class="d-flex justify-content-end align-items-center gap-3">
 
-<i class="fa-solid fa-angle-up"></i>
-<i class="fa-solid fa-angle-down"></i>
-<i class="fa-solid fa-angle-right"></i>
-<i class="fa-solid fa-angle-left"></i>
+            <!-- search -->
+            <form class="d-flex align-items-center search-form" role="search">
+              <div class="search-input-wrapper position-relative">
+                <input type="search" class="form-control rounded-pill" placeholder="" aria-label="Search">
+                <button type="submit" class="search-btn border-0 bg-transparent" aria-label="Submit search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
 
-    
-    -->
+            <!-- socio -->
+            <div class="social-icons d-flex align-items-center gap-2">
+              <a href="https://www.facebook.com/zazanymadagascar/" class="social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/zazany_madagascar/" class="social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCFadZA4ToQ3ZpXCN5DBY6pg" class="social-link youtube-link"
+                aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
 
-    <header id="top">
-        <div class="px-big py-2 nav-top">
-            <section class="row">
-                <article class="col-12">
-                    <div class="d-flex justify-content-end align-items-center gap-3">
-                        
-                        <!-- search -->
-                        <form class="d-flex align-items-center search-form" role="search">
-                            <div class="search-input-wrapper position-relative">
-                                <input type="search" class="form-control rounded-pill" placeholder="" aria-label="Search">
-                                <button type="submit" class="search-btn border-0 bg-transparent" aria-label="Submit search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </div>
-                        </form>
+    <div id="mainNavbar" class="nav-bottom bg-brown py-2">
 
-                        <!-- socio -->
-                        <div class="social-icons d-flex align-items-center gap-2">
-                            <a href="https://www.facebook.com/zazanymadagascar/" class="social-link" aria-label="Facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/zazany_madagascar/" class="social-link" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCFadZA4ToQ3ZpXCN5DBY6pg" class="social-link youtube-link" aria-label="YouTube">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </section>
+      <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
+        <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">
+          <a class="navbar-brand m-0 w-100 text-center d-flex justify-content-center align-items-center"
+            href="index.html">
+            <div class="logo-circle d-flex align-items-center justify-content-center">
+              <img src="images/logo-version-rgb.svg" alt="logo" class="logo-img">
+            </div>
+          </a>
         </div>
 
-        <div class="nav-bottom bg-brown py-2">
-
-            <nav class="navbar navbar-expand-lg align-items-center justify-content-between">
-                <div class="order-1 col-5 col-md-2 d-flex flex-column logo align-items-center text-center">               
-                    <a class="navbar-brand m-0 w-100 text-center d-flex justify-content-center align-items-center" href="index.html">                        
-                        <div class="logo-circle d-flex align-items-center justify-content-center">
-                            <img src="images/logo-version-rgb.svg" alt="logo" class="logo-img">                        
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-4 order-2 d-md-none text-center p-0">
-                    <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn btn-don bg-yellow text-uppercase text-uppercase">
-                        je donne 
-                        <i class="fa-solid fa-heart"></i>
-                    </a>
-                </div>
-
-                <div class="col-3 order-3 d-lg-none text-center">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars fs-2"></i>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse order-3 order-md-2 col-md-8 justify-content-between" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-md-0 text-center align-items-center w-100 justify-content-between">
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Je m’informe 
-                                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li><a class="dropdown-item" href="notre-histoire.html">Notre histoire</a></li>
-                                <li><a class="dropdown-item" href="equipe.html">Notre Équipe</a></li>
-                                <li><a class="dropdown-item" href="messages-precieux.html">Temoignages</a></li>
-                                <li><a class="dropdown-item" href="transparence-financiere.html">Transparence financière</a></li>
-                                <li><a class="dropdown-item" href="madagascar.html">Madagascar</a></li>
-                                <li><a class="dropdown-item" href="projets-zazany-madagascar.html">Nos Projets réalisés</a></li>
-                                <li><a class="dropdown-item" href="reduction-fiscale.html">Réduction fiscale</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                J’agis 
-                                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item" href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1/">Faire un don</a></li>
-                                <li><a class="dropdown-item" href="nous-contacter.html">Demande de brochure</a></li>
-                                <li><a class="dropdown-item" href="adhesion.html">Adhésion à Zazany Madagascar</a></li>
-                                <li><a class="dropdown-item" href="devenir-benevole.html">Devenir Bénévole</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Je parraine 
-                                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <li><a class="dropdown-item" href="enfants-a-parrainer.html">Les enfants à parrainer</a></li>
-                                <li><a class="dropdown-item" href="famille-vulnerable-a-parrainer.html">Famille pauvre à parrainer</a></li>
-                                <li><a class="dropdown-item" href="parrainage.html">Parrainer un enfant</a></li>
-                                <li><a class="dropdown-item" href="#">FAQ Parrainage</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link color-text" href="nos-articles.html">Notre blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-text text-center lh-sm" href="les-partenaires.html">Partenaires</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-text" href="nous-contacter.html">Contactez-nous</a>
-                        </li>
-                    </ul>
-                </div>  
-
-                <div class="order-lg-3 col-lg-2 d-none d-lg-flex justify-content-center">
-                    <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1/" class="btn-don text-decoration-none text-uppercase">
-                        je donne 
-                        <i class="fa-solid fa-heart"></i>
-                    </a>
-                </div>                                           
-            </nav>
+        <div class="col-4 order-2 d-md-none text-center p-0">
+          <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1"
+            class="btn btn-don bg-yellow text-uppercase text-uppercase">
+            je donne
+            <i class="fa-solid fa-heart"></i>
+          </a>
         </div>
-    </header>
+
+        <div class="col-3 order-3 d-lg-none text-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-2"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-3 order-md-2 col-md-8 justify-content-between"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-md-0 text-center align-items-center w-100 justify-content-between">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Je m’informe
+                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="notre-histoire.html">Notre histoire</a></li>
+                <li><a class="dropdown-item" href="equipe.html">Notre Équipe</a></li>
+                <li><a class="dropdown-item" href="messages-precieux.html">Temoignages</a></li>
+                <li><a class="dropdown-item" href="transparence-financiere.html">Transparence financière</a></li>
+                <li><a class="dropdown-item" href="madagascar.html">Madagascar</a></li>
+                <li><a class="dropdown-item" href="projets-zazany-madagascar.html">Nos Projets réalisés</a></li>
+                <li><a class="dropdown-item" href="reduction-fiscale.html">Réduction fiscale</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                J’agis
+                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item"
+                    href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1/">Faire un
+                    don</a></li>
+                <li><a class="dropdown-item" href="nous-contacter.html">Demande de brochure</a></li>
+                <li><a class="dropdown-item" href="adhesion.html">Adhésion à Zazany Madagascar</a></li>
+                <li><a class="dropdown-item" href="devenir-benevole.html">Devenir Bénévole</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown3" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Je parraine
+                <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="dropdown-item" href="enfants-a-parrainer.html">Les enfants à parrainer</a></li>
+                <li><a class="dropdown-item" href="famille-vulnerable-a-parrainer.html">Famille pauvre à parrainer</a>
+                </li>
+                <li><a class="dropdown-item" href="parrainage.html">Parrainer un enfant</a></li>
+                <li><a class="dropdown-item" href="#">FAQ Parrainage</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link color-text" href="nos-articles.html">Notre blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-text text-center lh-sm" href="les-partenaires.html">Partenaires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-text" href="nous-contacter.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order-lg-3 col-lg-2 d-none d-lg-flex justify-content-center">
+          <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1/"
+            class="btn-don text-decoration-none text-uppercase">
+            je donne
+            <i class="fa-solid fa-heart"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
     <main>
 
-        <img src="images/patience.png" alt="patience">
+      <div class="hero px-0"><!-- banner -->        
+        <section class="row g-0">
+          <article class="col-12">
+            <div class="page-banner-hero" style="background-image: url('images/enfants/AUGUSTIN.jpg');">
+              <div class="hero-content">
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <h1 class="titre-banner text-uppercase text-white">Questions <span class="titre-banner-color">fréquentes</span></h1>
+                    <p class="text-banner text-white mb-4">Vous avez des questions sur le parrainage ? Nous avons rassemblé ici les réponses aux questions les plus fréquentes pour vous aider à mieux comprendre comment ça fonctionne.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
 
-        <div class="hero px-0">
-            <section class="row g-0">
-                <article class="col-12">
-                    <div class="page-banner-hero" style="background-image: url('images/baobab-madagascar.jpg');">
-                        <div class="hero-content">
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                                    <h1 class="titre-banner text-uppercase text-white">Nous contacter</h1>
-                                    <p class="text-banner text-white fs-5 mb-4"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </div>
-
-        <div class="container">
-    <div class="row g-4">
-      
-      <!-- Левая колонка: Аккордеон с вопросами -->
-      <div class="col-lg-8">
-        <div class="accordion zm-accordion" id="faqAccordion">
+      <div class="container px-big py-big">
+        <section class="row g-5">
           
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading1">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                Comment fonctionne le parrainage ?
-              </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Le parrainage permet d'accompagner un enfant et sa famille dans la durée en assurant son accès à l'éducation, aux soins et à une alimentation équilibrée.
+          <div class="col-md-8">
+            <div class="accordion zm-accordion" id="faqAccordion">
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    Comment fonctionne le parrainage ?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    <p>
+                      Retrouvez <a href="enfants-a-parrainer.html" class="lien-histoir"> la liste des enfants à parrainer</a> avec Zazany Madagascar avec leur prénom, leur histoire et leur situation. Tous les enfants se trouvant dans notre Programme de parrainage ont été proposé par nos collaborateurs locaux, suivant le caractère de situation précaire et en grande difficulté des enfants. Par conséquent, leur point commun est qu’ils vivent tous dans une situation d’extrême pauvreté.</p>
+                    <p>
+                      Il vous suffit de cliquer sur le bouton en bas de page. Vous serez redirigé vers notre site partenaire HelloAsso sur lequel vous serez amené à finaliser votre démarche de parrainage, en n’omettant pas de préciser le nom de l’enfant que vous désirez de parrainer. Notre plateforme de paiement est 100% sécurisée. Un cryptage SSL assure la confidentialité de  vos données. Celles-ci sont traitées de façon sécurisée.
+                    </p>
+                    <p>
+                      Si toutefois, vous n’êtes pas à l’aise avec le paiement en ligne, vous pouvez tout à fait nous contacter via notre formulaire de contact ou par le Chat Whatsapp en bas à droite du site pour un autre moyen de paiement comme le virement ou paiement par chèque.
+                    </p>
+                  </div>
+                </div>
               </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    Quel est le montant du parrainage ?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Le coût du parrainage est de 20€ par mois minimum. Ce qui vous revient à 6,8€ après réduction fiscale de 66%. Avec ce don mensuel, vous permettez à un enfant de rester dans le système scolaire, de pouvoir s’acheter des habits propres, un uniforme de l’école, de payer l’écolage car l’école n’est pas gratuite à Madagascar et surtout de manger au moins une fois par jour…
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    À quoi sert l'argent du parrainage ?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    L'argent sert directement à payer la scolarité, la cantine, les fournitures et le suivi médical de
+                    l'enfant parrainé.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse4">
+                    Comment sont sélectionnés les enfants ?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Les enfants sont identifiés en collaboration avec les communautés locales et nos équipes sur place
+                    selon leur niveau de vulnérabilité.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse5">
+                    Puis-je choisir l'enfant que je souhaite parrainer ?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Oui, vous avez le choix de  parrainer une fille ou  un garçon, selon ce que votre coeur vous guide. Il n’y pas d’imposition. Néanmoins, il arrive parfois que l’enfant vous avez choisi ait pu sortir du Programme de parrainage pour diverses raisons comme par exemple : la famille quitte la grande ville pour aller dans les zones rurales ne laissant pas d’adresse…Nos collaborateurs n’ont aucun moyen de contacter la famille. L’enfant quitte l’école et donc le Programme de parrainage, indépendamment de notre volonté…Si la situation se produit, l’équipe ne tarde pas à vous mettre au courant et vous propose un autre enfant que vous pouvez accepter ou en choisir un autre dont la situation vous touche le plus.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse6">
+                    Comment vais-je recevoir des nouvelles de mon filleul ?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Les échanges entre parrain-filleul sont fortement conseillés pour tisser un lien. 2 mois après votre parrainage, votre filleul vous enverra un premier courrier que l’association Zazany Madagascar vous transmettra. Il se peut que l’enfant ne parle pas français. Notre équipe vous fera la traduction. Si, vous aussi, vous avez envie de correspondre avec votre filleul pour apprendre à vous connaître, il est tout à fait possible de l’écrire. Nos collaborateurs locaux ont la capacité de traduire vos courriers.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse7">
+                    Est-il possible de visiter le projet à Madagascar ?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Oui, des visites peuvent être organisées en accord avec l'équipe locale pour rencontrer votre filleul
+                    dans son environnement.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading8">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse8">
+                    Mon parrainage est-il déductible des impôts ?
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Oui, votre don vous donne droit à une réduction fiscale selon la législation en vigueur. Un reçu
+                    fiscal vous sera adressé.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading9">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse9">
+                    Puis-je arrêter le parrainage ?
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Il n’y a aucune condition pour arrêter un parrainage si ce n’est de nous avertir un peu plutôt afin que nous puissions prévenir l’enfant que son parrainage s’est arrêté et l’équipe locale. L’enfant sera de nouveau dans la liste des enfants à parrainer et attendra un nouveau parrainage. Jusqu’à présent, nous n’avons pas eu ce cas de figure mais il est tout de même utile de le rappeler.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="heading10">
+                  <button class="accordion-button collapsed bg-lait fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse10">
+                    Qui contacter pour plus d'informations ?
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body bg-lait">
+                    Vous pouvez nous contacter via <a href="nous-contacter.html" class="lien-histoir"> notre formulaire</a> en ligne ou par email à l'adresse indiquée sur le
+                    site.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading2">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                Quel est le montant du parrainage ?
-              </button>
-            </h2>
-            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Le montant suggéré est de 30€ par mois, ce qui permet de couvrir les frais scolaires et médicaux de l'enfant.
-              </div>
+          <div class="col-md-4">
+
+            <!--  "Une question spécifique ?" -->
+            <div class="p-4 rounded-4 mb-4 text-center bg-yellow color-brown" >
+              <h3 class="fw-bold mb-3 color-brown">Une question spécifique ?</h3>
+              <p class="mb-4">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous
+                accompagner dans votre démarche de parrainage.</p>
+              <a href="nous-contacter.html" class="btn btn-dark-cta text-uppercase"
+                >Nous contacter</a>
+            </div>
+
+            <!--  "Le parrainage en bref" -->
+            <div class="p-4 rounded-4 text-center color-brown" style="background-color: #F0D399;">
+              <h3 class="fw-bold mb-3">Le parrainage en bref</h3>
+              <ul class="list-unstyled text-start mb-4 ms-2 color-brown">
+                <li class="mb-2">✓ Un soutien durable pour un enfant et sa famille</li>
+                <li class="mb-2">✓ Un accès à l'éducation, la santé et une meilleure alimentation</li>
+                <li class="mb-2">✓ Des nouvelles régulières</li>
+                <li class="mb-2">✓ Une relation de confiance et de proximité</li>
+              </ul>
+              <a href="nos-articles.html" class="btn btn-dark-cta text-uppercase"
+                >Découvrir nos actions</a>
             </div>
           </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading3">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                À quoi sert l'argent du parrainage ?
-              </button>
-            </h2>
-            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                L'argent sert directement à payer la scolarité, la cantine, les fournitures et le suivi médical de l'enfant parrainé.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading4">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                Comment sont sélectionnés les enfants ?
-              </button>
-            </h2>
-            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Les enfants sont identifiés en collaboration avec les communautés locales et nos équipes sur place selon leur niveau de vulnérabilité.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading5">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                Puis-je choisir l'enfant que je souhaite parrainer ?
-              </button>
-            </h2>
-            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Nous attribuons les parrainages en priorité aux enfants qui en ont le plus besoin à l'instant T.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading6">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                Comment vais-je recevoir des nouvelles de mon filleul ?
-              </button>
-            </h2>
-            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Vous recevrez régulièrement des bulletins d'information, des lettres et des photos de votre filleul tout au long de l'année.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading7">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                Est-il possible de visiter le projet à Madagascar ?
-              </button>
-            </h2>
-            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Oui, des visites peuvent être organisées en accord avec l'équipe locale pour rencontrer votre filleul dans son environnement.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading8">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
-                Mon parrainage est-il déductible des impôts ?
-              </button>
-            </h2>
-            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Oui, votre don vous donne droit à une réduction fiscale selon la législation en vigueur. Un reçu fiscal vous sera adressé.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading9">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
-                Puis-je arrêter le parrainage ?
-              </button>
-            </h2>
-            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Vous pouvez interrompre votre parrainage à tout moment sur simple demande à notre équipe.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
-            <h2 class="accordion-header" id="heading10">
-              <button class="accordion-button collapsed bg-light text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
-                Qui contacter pour plus d'informations ?
-              </button>
-            </h2>
-            <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body bg-light">
-                Vous pouvez nous contacter via notre formulaire en ligne ou par email à l'adresse indiquée sur le site.
-              </div>
-            </div>
-          </div>
-
-        </div>
+        </section>
       </div>
 
-      <!-- Правая колонка: Сайдбары -->
-      <div class="col-lg-4">
-        
-        <!-- Блок "Une question spécifique ?" -->
-        <div class="p-4 rounded-4 mb-4 text-center" style="background-color: #E09B3D; color: #24150E;">
-          <h3 class="fw-bold mb-3" style="font-size: 1.4rem;">Une question spécifique ?</h3>
-          <p class="small mb-4">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre démarche de parrainage.</p>
-          <a href="#" class="btn btn-dark rounded-pill px-4 py-2 fw-semibold text-uppercase" style="font-size: 0.8rem; background-color: #24150E;">Nous contacter</a>
-        </div>
+      <div class="px-big py-big ensemble">   <!-- Ensemble, on va plus loin -->
+           
+        <section class="row align-items-center">
 
-        <!-- Блок "Le parrainage en bref" -->
-        <div class="p-4 rounded-4 text-center" style="background-color: #F0D399; color: #24150E;">
-          <h3 class="fw-bold mb-3" style="font-size: 1.4rem;">Le parrainage en bref</h3>
-          <ul class="list-unstyled text-start small mb-4 ms-2">
-            <li class="mb-2">✓ Un soutien durable pour un enfant et sa famille</li>
-            <li class="mb-2">✓ Un accès à l'éducation, la santé et une meilleure alimentation</li>
-            <li class="mb-2">✓ Des nouvelles régulières</li>
-            <li class="mb-2">✓ Une relation de confiance et de proximité</li>
-          </ul>
-          <a href="#" class="btn btn-dark rounded-pill px-4 py-2 fw-semibold text-uppercase" style="font-size: 0.8rem; background-color: #24150E;">Découvrir nos actions</a>
-        </div>
+            <article class="col-12 col-md-8 mb-4 mb-lg-0 text-start">
+                <span class="subtitle text-uppercase d-block mb-1">Soutenir le projet</span>
+                <h2 class="section-title mb-3">Ensemble, on va plus loin</h2>
+                <p class="section-text m-0">
+                    Votre soutien change concrètement la vie d'un enfant et de sa famille. Vous pouvez vous engager de différentes manières :
+                </p>
 
-      </div>
+                <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 flex-wrap mt-5">
+                
+                    <a href="devenir-benevole.html" class="btn btn-cta text-uppercase d-inline-flex align-items-center justify-content-center">
+                        Devenir bénévole 
+                        <img src="images/heart-mains.svg" alt="devenir-benevole" class="btn-svg-icon ms-1">
+                    </a>
+                    
+                    <a href="enfants-a-parrainer.html" class="btn btn-cta text-uppercase d-inline-flex align-items-center justify-content-center">
+                        Parrainer un enfant                         
+                        <i class="fa-solid fa-children"></i>
+                    </a>
+                    
+                    <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-cta text-decoration-none text-uppercase">
+                        Faire un don solidaire 
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                </div>
+            </article>
 
+            <article class="col-12 col-md-4 text-center">
+                <img src="images/colibri/colibri4.png" alt="Colibri" class="img-fluid colibri-img">
+            </article>
+        </section>           
     </div>
-  </div>
-
     </main>
 
     <footer class="footer-wrapper">
-        <div class="bg-brown py-2">
-            <section class="row align-items-center">                
-                <article class="logo col-6 col-md-4 text-center mb-3 mb-md-0">
-                    <a href="index.html" class="d-inline-block">
-                        <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
-                    </a>
-                </article>
-                
-                <article class="colibri col-6 col-md-4 text-center mb-3 mb-md-0">
-                    <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
-                </article>
+      <div class="bg-brown py-2">
+          <section class="row align-items-center">                
+              <article class="logo col-6 col-md-4 text-end text--md-center mb-3 mb-md-0">
+                  <a href="index.html" class="d-inline-block">
+                      <img src="images/logo-version-blanc.svg" alt="Zazany Madagascar" class="footer-logo img-fluid">
+                  </a>
+              </article>
+              
+              <article class="colibri col-6 col-md-4 text-start text-md-center mb-3 mb-md-0">
+                  <img src="images/colibri/colibri-white.png" alt="Colibri" class="footer-colibri img-fluid">
+              </article>
 
-                <article class="socio col-12 col-md-4 text-center text-md-start">
-                    <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
-                    <div class="footer-social-icons d-flex justify-content-center align-items-center gap-4">
-                        <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/zazany_madagascar/" class="social-icon-link" aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCFadZA4ToQ3ZpXCN5DBY6pg" class="social-icon-link" aria-label="YouTube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="nous-contacter.html" class="social-icon-link" aria-label="Email">
-                            <i class="fa-regular fa-envelope"></i>
-                        </a>
-                    </div>
-                </article>
-            </section>
-        </div>
+              <article class="socio col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                  <h5 class="text-white mb-3 footer-social-title">Nous suivre ou contactez avec nous</h5>
+                  <div class="footer-social-icons d-flex align-items-center justify-content-center justify-content-md-start gap-4">
+                      <a href="https://www.facebook.com/zazanymadagascar/" class="social-icon-link" aria-label="Facebook">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="https://www.instagram.com/zazany_madagascar/" class="social-icon-link" aria-label="Instagram">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://www.youtube.com/channel/UCFadZA4ToQ3ZpXCN5DBY6pg" class="social-icon-link" aria-label="YouTube">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+                      <a href="nous-contacter.html" class="social-icon-link" aria-label="Email">
+                          <i class="fa-regular fa-envelope"></i>
+                      </a>
+                  </div>
+              </article>
+          </section>
+      </div>
 
-        <div class="py-2 footer-bottom px-big">
-            <section class="row align-items-center">
-                <article class="col-12">
-                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
-                        
-                        <div class="copyright-links mb-2 mb-md-0">
-                            <span>&copy; Association Zazany Madagascar 2026</span>
-                            <span class="mx-1">|</span>
-                            <a href="mentions-legales.html" class="text-secondary text-decoration-none">Mentions Légales</a>
-                            <span class="mx-1">|</span>
-                            <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none">Politique De Confidentialité</a>
-                        </div>
+      <div class="py-2 footer-bottom px-big">
+          <section class="row align-items-center">
+              <article class="col-12">
+                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small copyright-bar">
+                      
+                      <div class="copyright-links mb-2 mb-md-0 d-flex flex-column flex-md-row text-center mb-2 mb-md-0">
+                          <span class="mb-2 mb-md-0">&copy; Association Zazany Madagascar 2026</span>
+                          <span class="mx-1 d-none d-md-block">|</span>
+                          <a href="mentions-legales.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Mentions Légales</a>
+                          <span class="mx-1 d-none d-md-block">|</span>
+                          <a href="politique-de-confidentialite.html" class="text-secondary text-decoration-none mb-2 mb-md-0">Politique De Confidentialité</a>
+                      </div>
 
-                        <div class="donate-mini">
-                            <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
-                                <i class="fa-solid fa-heart text-danger me-1"></i>
-                                Faire Un Don
-                            </a>
-                        </div>
+                      <div class="donate-mini">
+                          <a href="https://www.helloasso.com/associations/association-zazany-madagascar/formulaires/1" class="btn-donate-small text-decoration-none">
+                              <i class="fa-solid fa-heart color-red me-1"></i>
+                              Faire Un Don
+                          </a>
+                      </div>
 
-                    </div>
-                </article>
-            </section>
-        </div>
-    </footer>
+                  </div>
+              </article>
+          </section>
+      </div>
+  </footer>
 
-    <a class="back-to-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+  <a class="back-to-top" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/header-scroll.js"></script>
 </body>
+
 </html>
